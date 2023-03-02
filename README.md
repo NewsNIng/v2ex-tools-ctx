@@ -1,6 +1,6 @@
-# my-crx
+# v2ex tools ctx
 
-> a chrome extension tools built with Vite + React, and Manifest v3
+> decode base64 reply and topic content
 
 ## Installing
 
@@ -13,15 +13,13 @@
 run the command
 
 ```shell
-$ cd my-crx
-
 $ npm run dev
 ```
 
 ### Chrome Extension Developer Mode
 
 1. set your Chrome browser 'Developer mode' up
-2. click 'Load unpacked', and select `my-crx/build` folder
+2. click 'Load unpacked', and select `build` folder
 
 ### Nomal FrontEnd Developer Mode
 

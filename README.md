@@ -2,6 +2,7 @@
 
 > decode base64 reply and topic content
 
+**eg. this extension is not published to chrome web store**
 
 origin text: 
 ![alt text](https://github.com/NewsNIng/v2ex-tools-ctx/blob/main/img/1.png?raw=true)

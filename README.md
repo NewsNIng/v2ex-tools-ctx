@@ -2,6 +2,13 @@
 
 > decode base64 reply and topic content
 
+
+origin text: 
+![alt text](https://github.com/NewsNIng/v2ex-tools-ctx/blob/main/img/1.png?raw=true)
+
+decode text:
+![alt text](https://github.com/NewsNIng/v2ex-tools-ctx/blob/main/img/2.png?raw=true)
+
 ## Installing
 
 1. Check if your `Node.js` version is >= **14**.

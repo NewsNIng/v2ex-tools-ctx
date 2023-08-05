@@ -125,6 +125,51 @@ function main() {
       walk(el)
     })
   }
+
+  // 自定义 css
+  customCss()
+  customJs()
+}
+
+function customCss() {
+  const styleEl = document.getElementById('custom-css-vvv2')
+  if (styleEl) {
+    return
+  }
+
+  const style = document.createElement('style')
+  style.id = 'custom-css-vvv2'
+  style.innerHTML = `
+    #Rightbar img.avatar {
+      filter: blur(12px);
+    }
+
+    #Top a[href^="/member/"], 
+    #Rightbar a[href^="/member/"],
+    a.vvv2-member-href {
+      filter: blur(5px);
+    }
+    
+  `
+  document.head.appendChild(style)
+}
+
+function customJs() {
+  const query = [`#Top a[href^="/member/"]`, `#Rightbar a[href^="/member/"]`].join(',')
+  const allMemberHref = document.querySelectorAll(query)
+  allMemberHref.forEach((el) => {
+    const href = el.getAttribute('href')
+    const target = el.getAttribute('target')
+    el.classList.add('vvv2-member-href')
+    // el.innerHTML = "****"
+    el.removeAttribute('href')
+    el.removeAttribute('target')
+    // el.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   window.open(href!, target!)
+    // })
+  })
+  console.log(allMemberHref)
 }
 
 docReady(main)
